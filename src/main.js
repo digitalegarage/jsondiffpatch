@@ -49,8 +49,7 @@ if (environment.isBrowser) {
 	exports.homepage = packageInfo.homepage;
 	exports.version = packageInfo.version;
 
-	var formatterModuleName = './formatters';
-	var formatters = require(formatterModuleName);
+	var formatters = require('./formatters');
 	exports.formatters = formatters;
 	// shortcut for console
 	exports.console = formatters.console;
